@@ -22,7 +22,7 @@ const handler = createMcpHandler(
           message,
           projectId,
           system,
-          modelConfiguration: { modelId: "v0-gpt-5" },
+          modelConfiguration: { modelId: "v0-gpt-5", imageGenerations: true },
         });
         return { content: [{ type: "text", text: JSON.stringify(chat, null, 2) }] };
       }
