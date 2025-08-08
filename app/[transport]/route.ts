@@ -9,10 +9,6 @@ export const runtime = "nodejs";
 
 const handler = createMcpHandler(
   (server) => {
-    const allowedModelIds = [
-      "v0-gpt-5",
-    ] as const;
-
     server.tool(
       "v0_create_chat",
       "Create a v0 chat from a prompt, optionally within a project.",
